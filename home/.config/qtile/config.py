@@ -146,6 +146,7 @@ extension_defaults = widget_defaults.copy()
 callbacks = {
     'update': {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e sudo pacman -Syu')},
     'memory': {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e htop')},
+    'wifi':   {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e iwctl')},
 }
 
 
@@ -260,13 +261,15 @@ widgets_list = [
                    background = colors[5],
                    foreground = colors[2],
                    padding = 0,
-                   fontsize = 12
+                   fontsize = 12,
+                   mouse_callbacks = callbacks['wifi'],
                    ),
           widget.Wlan(
                    interface = network_interface,
                    foreground = colors[2],
                    background = colors[5],
-                   padding = 5
+                   padding = 5,
+                   mouse_callbacks = callbacks['wifi'],
                    ),
 
           # Volume
