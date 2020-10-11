@@ -52,4 +52,6 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 ### Files
 *	`~/.zshrc`
 *	`~/.oh-my-zsh/custom/themes/*`
+*	`~/.config/alacritty/*`
+*	`~/.config/qtile/*`
 
