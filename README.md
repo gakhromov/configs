@@ -42,6 +42,7 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) (for zsh customization)
 	-	`lxappearance` (for changing gtk themes)
 	> Unpack the theme in `~/.themes/` using `tar -xvf ...`, then apply the theme in LXAppearance
+	-	`picom` (window composer. Used for window animations + transparency)
 	
 ### Recommendations
 *	Other apps:
@@ -52,8 +53,10 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`python-pip` (python package installer)
 
 ### Files
+*	`~/.themes/*`
 *	`~/.zshrc`
 *	`~/.oh-my-zsh/custom/themes/*`
 *	`~/.config/alacritty/*`
 *	`~/.config/qtile/*`
+*	`~/.config/picom/*`
 
