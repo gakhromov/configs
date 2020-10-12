@@ -40,6 +40,8 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`nitrogen` (wallpapers)
 	-	`zsh` (bash alternative)
 	-	[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) (for zsh customization)
+	-	`lxappearance` (for changing gtk themes)
+	> Unpack the theme in `~/.themes/` using `tar -xvf ...`, then apply the theme in LXAppearance
 	
 ### Recommendations
 *	Other apps:
