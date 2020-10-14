@@ -54,11 +54,10 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 ### Recommendations
 *	Other apps:
 	-	`sudo` (you all know what this is for)
-	-	`chromium` (browser)
+	-	`chromium` (browser. Also can be used as an image viewer)
 	-	`flameshot` (tool for screenshots)
 	-	`pacman-contrib` (`pactree` and other useful stuff)
 	-	`nautilus` (file manager)
-	-	`eog` (eye of gnome image viewer)
 	-	`vlc` (music + video player)
 
 
