@@ -57,7 +57,10 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`chromium` (browser)
 	-	`flameshot` (tool for screenshots)
 	-	`pacman-contrib` (`pactree` and other useful stuff)
-	-	`python-pip` (python package installer)
+	-	`nautilus` (file manager)
+	-	`eog` (eye of gnome image viewer)
+	-	`vlc` (music + video player)
+
 
 ### Files
 *	`~/.themes/*`
