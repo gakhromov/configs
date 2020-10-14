@@ -10,14 +10,21 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 ### Files
 *	`/usr/share/X11/xorg.conf.d/*`
 
-## Desktop and App configs
+## System daemon config (`systemd` as the super-daemon)
 ### Requirements
-*	Xorg configured
-*	System daemons installed and enabled:
+*	System daemons installed and enabled/started:
 	-	`iwd` (for network control via `iwctl`)
 	-	`pulseaudio` (for audio)
 	> To work properly, `pulseaudio` service and socket has to be enabled/started by user with `--user` flag
 	-	`pulseaudio-alsa` (also for audio)
+	-	`tlp` (daemon that saves battery (useful for notebooks))
+### Files
+*	`/etc/systemd/logind.conf`
+
+## Desktop and App configs
+### Requirements
+*	Xorg installed and configured
+*	System daemons installed and configured
 *	Command line system control apps:
 	-	`brightnessctl` (Brightness control)
 	-	`htop` (process control)

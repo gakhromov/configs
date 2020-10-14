@@ -11,20 +11,21 @@ from typing import List  # noqa: F401
 
 mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"                             # My terminal of choice
+myGUIEditor = 'code'
 network_interface = 'wlan0'
 
 
 keys = [
     # Switch between windows in current stack pane
-    Key([mod], "k", lazy.layout.down(),
+    Key([mod], "Down", lazy.layout.down(),
         desc="Move focus down in stack pane"),
-    Key([mod], "j", lazy.layout.up(),
+    Key([mod], "Up", lazy.layout.up(),
         desc="Move focus up in stack pane"),
 
     # Move windows up or down in current stack
-    Key([mod, "control"], "k", lazy.layout.shuffle_down(),
+    Key([mod, "control"], "Down", lazy.layout.shuffle_down(),
         desc="Move window down in current stack "),
-    Key([mod, "control"], "j", lazy.layout.shuffle_up(),
+    Key([mod, "control"], "Up", lazy.layout.shuffle_up(),
         desc="Move window up in current stack "),
 
     # Switch window focus to other pane(s) of stack
@@ -44,6 +45,7 @@ keys = [
 
     # Toggle between different layouts as defined below
     Key([mod, "control"], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+    
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart qtile"),
@@ -54,6 +56,7 @@ keys = [
         desc="Spawn a command using a prompt widget"),
     Key([mod], "Return", lazy.spawn(myTerm), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn('chromium'), desc="Launch browser"),
+    Key([mod], "c", lazy.spawn(myGUIEditor), desc="Launch GUI Editor"),
 
     # Circle through groups
     Key([mod], "Right", lazy.screen.next_group(), desc="Move to next group"),
@@ -90,8 +93,8 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 
 layout_theme = {"border_width": 0,
                 "margin": 5,
-                "border_focus": "e1acff",
-                "border_normal": "1D2330"
+                "border_focus":  "000000",
+                "border_normal": "292d3e",
                 }
 
 layouts = [
@@ -141,6 +144,8 @@ widget_defaults = dict(
     padding = 2,
     background=colors[2]
 )
+arrow_font_size = 41
+
 extension_defaults = widget_defaults.copy()
 
 callbacks = {
@@ -217,7 +222,7 @@ widgets_list = [
                    background = colors[0],
                    foreground = colors[5],
                    padding = 0,
-                   fontsize = 37
+                   fontsize = arrow_font_size
                    ),
           widget.Pacman(
                    update_interval = 1800,
@@ -239,7 +244,7 @@ widgets_list = [
                    background = colors[5],
                    foreground = colors[4],
                    padding = 0,
-                   fontsize = 37
+                   fontsize = arrow_font_size
                    ),
           widget.Memory(
                    foreground = colors[2],
@@ -254,7 +259,7 @@ widgets_list = [
                    background = colors[4],
                    foreground = colors[5],
                    padding = 0,
-                   fontsize = 37
+                   fontsize = arrow_font_size
                    ),
           widget.TextBox(
                    text = '\uF1EB',
@@ -278,7 +283,7 @@ widgets_list = [
                    background = colors[5],
                    foreground = colors[4],
                    padding = 0,
-                   fontsize = 37
+                   fontsize = arrow_font_size
                    ),
           widget.TextBox(
                    text = '\uF028',
@@ -305,7 +310,7 @@ widgets_list = [
                    background = colors[4],
                    foreground = colors[5],
                    padding = 0,
-                   fontsize = 37
+                   fontsize = arrow_font_size
                    ),
           widget.CurrentLayoutIcon(
                    custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
@@ -326,7 +331,7 @@ widgets_list = [
                    background = colors[5],
                    foreground = colors[4],
                    padding = 0,
-                   fontsize = 37
+                   fontsize = arrow_font_size
                    ),
           widget.TextBox(
                    text = '\uF240',
@@ -348,7 +353,7 @@ widgets_list = [
                    background = colors[4],
                    foreground = colors[5],
                    padding = 0,
-                   fontsize = 37
+                   fontsize = arrow_font_size
                    ),
           widget.TextBox(
                    text = '\uF017 ',
