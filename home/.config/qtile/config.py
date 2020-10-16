@@ -9,9 +9,10 @@ from libqtile import layout, bar, widget, hook
 from typing import List  # noqa: F401
 
 
-mod = "mod4"                                     # Sets mod key to SUPER/WINDOWS
-myTerm = "alacritty"                             # My terminal of choice
+mod = 'mod4'                                     # Sets mod key to SUPER/WINDOWS
+myTerm = 'alacritty'
 myGUIEditor = 'code'
+myFileExplorer = 'nautilus'
 network_interface = 'wlan0'
 
 
@@ -57,6 +58,7 @@ keys = [
     Key([mod], "Return", lazy.spawn(myTerm), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn('chromium'), desc="Launch browser"),
     Key([mod], "c", lazy.spawn(myGUIEditor), desc="Launch GUI Editor"),
+    Key([mod], "e", lazy.spawn(myFileExplorer), desc="Launch File Explorer"),
 
     # Circle through groups
     Key([mod], "Right", lazy.screen.next_group(), desc="Move to next group"),

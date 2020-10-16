@@ -31,12 +31,12 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`pamixer` (`pulseaudio` audio control)
 *	Fonts:
 	-	`adobe-source-sans-pro-fonts` (default font)
-	-	`powerline-fonts` (powerline fonts)
-	-	`ttf-font-awesome` (fixes powerlines in `qtile` bar and also provides icons)
-	-	`ttf-inconsolata` (`alacritty` font)
 	-	`ttf-ubuntu-font-family` (`qtile` bar font)
 	-	`noto-fonts-emoji` (emoji)
 	-	`texlive-fontsextra` (math fonts)
+	-	`powerline-fonts` (powerline fonts)
+	-	`ttf-font-awesome` (fixes powerlines in `qtile` bar and also provides icons)
+	-	`ttf-inconsolata` (`alacritty` font)
 *	Window manager + utils:
 	-	`vim` (text editor)
 	-	`powerline` (powerline plugin for `vim`, `qtile` and other stuff)
