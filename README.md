@@ -35,6 +35,8 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`ttf-font-awesome` (fixes powerlines in `qtile` bar and also provides icons)
 	-	`ttf-inconsolata` (`alacritty` font)
 	-	`ttf-ubuntu-font-family` (`qtile` bar font)
+	-	`noto-fonts-emoji` (emoji)
+	-	`texlive-fontsextra` (math fonts)
 *	Window manager + utils:
 	-	`vim` (text editor)
 	-	`powerline` (powerline plugin for `vim`, `qtile` and other stuff)
