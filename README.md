@@ -29,6 +29,7 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`brightnessctl` (Brightness control)
 	-	`htop` (process control)
 	-	`pamixer` (`pulseaudio` audio control)
+	-	`alsa-lib`, `alsa-utils` (other audio control)
 *	Fonts:
 	-	`adobe-source-sans-pro-fonts` (default font)
 	-	`ttf-ubuntu-font-family` (`qtile` bar font)
