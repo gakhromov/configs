@@ -18,6 +18,8 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	> To work properly, `pulseaudio` service and socket has to be enabled/started by user with `--user` flag
 	-	`pulseaudio-alsa` (also for audio)
 	-	`tlp` (daemon that saves battery (useful for notebooks))
+	-	`ufw` (Uncomplicated firewall)
+	> Default config would be `ufw default deny` + `ufw enable`
 ### Files
 *	`/etc/systemd/logind.conf`
 

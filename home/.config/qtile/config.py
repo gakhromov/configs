@@ -11,7 +11,7 @@ from typing import List  # noqa: F401
 
 mod = 'mod4'                                     # Sets mod key to SUPER/WINDOWS
 myTerm = 'alacritty'
-myGUIEditor = 'code'
+myGUIEditor = 'emacs'
 myFileExplorer = 'nautilus'
 network_interface = 'wlan0'
 
@@ -78,7 +78,8 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10-")),
 ]
 
-group_names = [("WWW", {'layout': 'monadtall'}),
+group_names = [("WEB 1", {'layout': 'monadtall'}),
+               ("WEB 2", {'layout': 'monadtall'}),
                ("DEV", {'layout': 'monadtall'}),
                ("TERM", {'layout': 'monadtall'}),
                ("SYS", {'layout': 'monadtall'}),
@@ -146,7 +147,7 @@ widget_defaults = dict(
     padding = 2,
     background=colors[2]
 )
-arrow_font_size = 41
+arrow_font_size = 43
 
 extension_defaults = widget_defaults.copy()
 
@@ -154,6 +155,7 @@ callbacks = {
     'update': {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e sudo pacman -Syu')},
     'memory': {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e htop')},
     'wifi':   {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e iwctl')},
+    'sound':   {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e alsamixer')},
 }
 
 
@@ -292,18 +294,21 @@ widgets_list = [
                    background = colors[4],
                    foreground = colors[2],
                    padding = 0,
-                   fontsize = 12
+                   fontsize = 12,
+                   mouse_callbacks = callbacks['sound']
                    ),
           widget.TextBox(
                   text = ' Volume:',
                    foreground = colors[2],
                    background = colors[4],
-                   padding = 0
+                   padding = 0,
+                   mouse_callbacks = callbacks['sound']
                    ),
           widget.PulseVolume(
                    foreground = colors[2],
                    background = colors[4],
-                   padding = 5
+                   padding = 5,
+                   mouse_callbacks = callbacks['sound']
                    ),
 
           # Layouts
