@@ -64,6 +64,7 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`pacman-contrib` (`pactree` and other useful stuff)
 	-	`nautilus` (file manager)
 	-	`vlc` (music + video player)
+	-	`lxrandr-gtk3` (program to manage monitor setups using `xrandr`)
 
 
 ### Files
