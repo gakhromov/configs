@@ -63,6 +63,7 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`flameshot` (tool for screenshots)
 	-	`pacman-contrib` (`pactree` and other useful stuff)
 	-	`nautilus` (file manager)
+	-	`nautilus-share` (for nautilus smb support)
 	-	`vlc` (music + video player)
 	-	`lxrandr-gtk3` (program to manage monitor setups using `xrandr`)
 
