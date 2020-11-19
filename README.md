@@ -48,6 +48,7 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 	-	`alacritty` (terminal emulator)
 	-	`nitrogen` (wallpapers)
 	-	`git` (Version control system. Required to install AUR packages)
+	-	`base-devel` (Required to install packages from AUR)
 	-	`yay` (great AUR helper. Installes from AUR)
 	-	`zsh` (bash alternative)
 	-	[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) (for zsh customization, `oh-my-zsh-git` in AUR)
