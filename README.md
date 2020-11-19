@@ -6,6 +6,7 @@ For more info, refer to [Arch Wiki](https://wiki.archlinux.org/).
 ## Xorg config
 ### Requirements
 *	`xorg` package group (`pacman -S xorg`)
+*	`xorg-xinit`
 *	`libinput` package (`pacman -S xf86-input-libinput`)
 ### Files
 *	`/usr/share/X11/xorg.conf.d/*`
